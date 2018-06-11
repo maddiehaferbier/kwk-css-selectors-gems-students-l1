@@ -1,9 +1,32 @@
-tags:
-  - css
-  - css selectors
-  - kids
-  - html
-languages:
-  - css
-type:
-  - lab
+  .front, .back {
+   position: absolute;
+   top:0;
+   left:0;
+   width:200px;
+   height: 200px;
+   backface-visibility: hidden;
+   }
+  .back{
+    transform: rotateX(180deg)
+  }
+ 
+   .card {
+     
+     position: relative;
+     color: #fff;
+     font-size: 70%;
+     text-align: center;
+     font-family: Helvetica;
+     line-height: 200px;
+     margin: 20px;
+     background: blue;
+     width: 200px;
+     height: 200px;
+     transition: all 1s ease;
+     transform-style: preserve-3d;
+     perspective: 700;
+   }
+   
+   .card:hover {
+     transform:rotateX(180deg);
+   }
